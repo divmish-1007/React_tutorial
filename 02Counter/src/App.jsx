@@ -19,7 +19,7 @@ function App() {
     setCounter(prevCount=>{
     const newcount = prevCount + 1;
 
-      if(counter > 20 ){
+      if(newcount > 20 ){
         return 20;
       }
       return newcount;
