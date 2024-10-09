@@ -26,22 +26,22 @@ function App() {
     });
   }
 
-  const subValue = () =>{
-   if(counter>0)
-    setCounter(counter-1)
-  }
-
   // const subValue = () =>{
-
-  //   setCounter(prevCount=>{
-  //     const newcount = prevCount + 1;
-
-  //     if(counter < 0 ){
-  //       return 0;
-  //     }
-  //     return newcount;
-  //   });
+  //  if(counter>0)
+  //   setCounter(counter-1)
   // }
+
+  const subValue = () =>{
+
+    setCounter(prevCount=>{
+      const newcount = prevCount - 1;
+
+      if(newcount < 0 ){
+        return 0;
+      }
+      return newcount;
+    });
+  }
 
 
   return (
