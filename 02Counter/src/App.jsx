@@ -17,12 +17,12 @@ function App() {
   const addValue = () =>{
 
     setCounter(prevCount=>{
-      counter = prevCount + 1;
+    const newcount = prevCount + 1;
 
       if(counter > 20 ){
         return 20;
       }
-      return counter;
+      return newcount;
     });
   }
 
@@ -33,13 +33,13 @@ function App() {
 
   // const subValue = () =>{
 
-  //   setCounter(counter=>{
-  //     counter = counter - 1;
+  //   setCounter(prevCount=>{
+  //     const newcount = prevCount + 1;
 
   //     if(counter < 0 ){
   //       return 0;
   //     }
-  //     return counter;
+  //     return newcount;
   //   });
   // }
 
