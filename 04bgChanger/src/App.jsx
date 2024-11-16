@@ -63,7 +63,7 @@ function App() {
   )
 }
 
-export default App
+export default App 
 
 // The code written below has more readability and flexibility
 
