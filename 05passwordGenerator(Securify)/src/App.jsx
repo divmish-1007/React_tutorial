@@ -30,7 +30,7 @@ function App() {
 
   const copyPasswordToClipBoard = useCallback(()=>{
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 32)  // Only Selects the first 3 numbers
+    passwordRef.current?.setSelectionRange(0, Password.length)  // We can vary the selected password length by manually write what we needed in place of password.length
     window.navigator.clipboard.writeText(Password)
   }, [Password])
   
